@@ -3,6 +3,7 @@ import   'dotenv/config'
 import cors from 'cors'
 import helmet from 'helmet'
 import authRouter from './routes/auth.route.js'
+import categoriesRouter from './routes/category.route.js'
 
  
 
@@ -13,6 +14,7 @@ app.use(helmet())
 
 
 app.use('/auth', authRouter)
+app.use('/categories', categoriesRouter)
 
 
 export default app;

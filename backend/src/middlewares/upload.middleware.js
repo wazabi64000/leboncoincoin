@@ -1,9 +1,9 @@
-import multer from "multer";
-
+import multer from "multer"
+ 
 // configuration du  sckotage de lèimage 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "/upload");
+    cb(null, "upload/");
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + "-" + file.originalname);

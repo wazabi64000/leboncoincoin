@@ -23,7 +23,7 @@ const fileFilter = (req, file ,cb) => {
 
 // exporter le middleware muter pret 
 
-export const uplaod = multer({
+export const upload = multer({
 storage, fileFilter,
 limits: {fileSize: 20 * 1024 * 1024} // limite 20 Mo par fichiers 
 
